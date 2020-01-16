@@ -9,7 +9,9 @@ mongoose.connect(
   "mongodb+srv://omnistack:omnistack@cluster0-owvmk.mongodb.net/week10?retryWrites=true&w=majority",
   {
     useNewUrlParser: true, // Para tirar os erros no terminal
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useFindAndModify: false,
+    useCreateIndex: true
   }
 );
 
